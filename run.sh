@@ -1,6 +1,6 @@
-tasks=("fever" "fiqa" "trec-covid" "webis-touche2020" "nfcorpus" "dbpedia-entity")
+tasks=("dbpedia-entity" "fiqa" "trec-covid" "webis-touche2020" "nfcorpus") # "fever" "hotpotqa" "msmarco" "nq"
 base_models=("e5-small-v2" "contriever")
-llm_models=("meta-llama/llama-3-70b-instruct") 
+llm_models=("meta-llama/llama-3-70b-instruct") # "meta-llama/Meta-Llama-3-8B-Instruct"
 
 for llm in "${llm_models[@]}"; do
     for task_type in "${tasks[@]}"; do
